@@ -37,7 +37,7 @@ integer.
 
 ## Related
 
-- [io-ts-bigint](https://github.com/EricCrosson/bigint-ts/blob/master/packages/io-ts-bigint)
+- [io-ts-bigint](https://github.com/EricCrosson/numbers-ts/blob/master/packages/io-ts-bigint)
 
 ## Acknowledgments
 
