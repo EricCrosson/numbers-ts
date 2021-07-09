@@ -8,13 +8,13 @@
     "io-ts",
     "number"
   ],
-  "homepage": "https://github.com/EricCrosson/fast-check-numbers",
+  "homepage": "https://github.com/EricCrosson/numbers-ts",
   "bugs": {
-    "url": "https://github.com/EricCrosson/fast-check-numbers/issues"
+    "url": "https://github.com/EricCrosson/numbers-ts/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EricCrosson/fast-check-numbers.git"
+    "url": "git+https://github.com/EricCrosson/numbers-ts.git"
   },
   "license": "ISC",
   "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/eric.s.crosson@utexas.edu)",

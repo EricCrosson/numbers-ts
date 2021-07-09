@@ -6,4 +6,4 @@ search_enabled: true
 # Aux links for the upper right navigation
 aux_links:
   'fast-check-numbers on GitHub':
-    - 'https://github.com/EricCrosson/fast-check-numbers'
+    - 'https://github.com/EricCrosson/numbers-ts'

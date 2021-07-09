@@ -6,4 +6,4 @@ search_enabled: true
 # Aux links for the upper right navigation
 aux_links:
   'io-ts-bigint on GitHub':
-    - 'https://github.com/EricCrosson/io-ts-bigint'
+    - 'https://github.com/EricCrosson/numbers-ts'

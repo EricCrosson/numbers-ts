@@ -2,13 +2,13 @@
   "name": "io-ts-numbers",
   "version": "1.0.2",
   "description": "io-ts library for numbers",
-  "homepage": "https://github.com/EricCrosson/io-ts-numbers",
+  "homepage": "https://github.com/EricCrosson/numbers-ts",
   "bugs": {
-    "url": "https://github.com/EricCrosson/io-ts-numbers/issues"
+    "url": "https://github.com/EricCrosson/numbers-ts/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EricCrosson/io-ts-numbers.git"
+    "url": "git+https://github.com/EricCrosson/numbers-ts.git"
   },
   "license": "ISC",
   "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/EricCrosson)",
