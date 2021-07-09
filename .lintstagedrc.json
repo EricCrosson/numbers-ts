@@ -1,4 +1,7 @@
 {
+  "*.md": [
+    "prettier --write"
+  ],
   "*.ts": [
     "prettier --write",
     "eslint --fix"

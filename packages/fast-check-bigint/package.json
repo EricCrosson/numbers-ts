@@ -1,12 +1,12 @@
 {
-  "name": "fast-check-numbers",
-  "version": "1.1.0",
-  "description": "fast-check arbitraries for narrowed numeric types",
+  "name": "fast-check-bigint",
+  "version": "1.0.0",
+  "description": "fast-check arbitraries for narrowed bigint types",
   "keywords": [
     "fast-check",
     "arbitrary",
     "io-ts",
-    "number"
+    "bigint"
   ],
   "homepage": "https://github.com/EricCrosson/numbers-ts",
   "bugs": {
@@ -18,14 +18,13 @@
   },
   "license": "ISC",
   "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/eric.s.crosson@utexas.edu)",
-  "sideEffects": true,
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
     "dist/src/"
   ],
   "scripts": {
-    "prepublishOnly": "npm run clean && npm run build",
+    "prepublishOnly": "npm run build",
     "ava": "ava -v",
     "clean": "rimraf --no-glob dist",
     "build": "tsc --build --incremental --verbose .",
@@ -67,7 +66,7 @@
   },
   "peerDependencies": {
     "fast-check": ">= 2.0.0",
-    "io-ts-numbers": ">= 1.0.0"
+    "io-ts-bigint": ">= 2.0.0"
   },
   "pre-commit": "lint-staged",
   "ava": {

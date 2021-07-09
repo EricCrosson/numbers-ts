@@ -16,9 +16,9 @@
   },
   "license": "ISC",
   "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/EricCrosson)",
+  "sideEffects": true,
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
-  "sideEffects": true,
   "files": [
     "dist/src/"
   ],

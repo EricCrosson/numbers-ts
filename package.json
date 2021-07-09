@@ -16,5 +16,8 @@
     "url": "https://github.com/EricCrosson/numbers-ts/issues"
   },
   "homepage": "https://github.com/EricCrosson/numbers-ts#readme",
-  "scripts": {}
+  "scripts": {
+    "lint-staged-packages": "npm run --workspaces lint-staged"
+  },
+  "pre-commit": "lint-staged-packages"
 }
