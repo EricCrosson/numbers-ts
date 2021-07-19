@@ -3,7 +3,7 @@
  */
 
 import * as fc from 'fast-check'
-import { NonPositiveBigInt } from 'io-ts-bigint/dist/src'
+import { NonPositiveBigInt } from 'io-ts-bigint'
 
 /**
  * @since 0.0.1
