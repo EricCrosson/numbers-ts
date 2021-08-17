@@ -1,15 +1,16 @@
 # io-ts-bigint
+
 [![License][]](https://opensource.org/licenses/ISC)
 [![NPM Package][]](https://npmjs.org/package/io-ts-bigint)
 
-[License]: https://img.shields.io/badge/License-ISC-blue.svg
-[NPM Package]: https://img.shields.io/npm/v/io-ts-bigint.svg
+[license]: https://img.shields.io/badge/License-ISC-blue.svg
+[npm package]: https://img.shields.io/npm/v/io-ts-bigint.svg
 
 > io-ts library for bigints
 
 ## Install
 
-``` shell
+```shell
 npm install io-ts-bigint
 ```
 
@@ -33,6 +34,7 @@ and the Zero and NonZero sets.
 ## Related
 
 - [io-ts-numbers](https://github.com/EricCrosson/numbers-ts/blob/master/packages/io-ts-numbers)
+- [fast-check-bigint](https://github.com/EricCrosson/numbers-ts/tree/master/packages/fast-check-bigint)
 
 ## Acknowledgments
 

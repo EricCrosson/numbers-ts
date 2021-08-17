@@ -1,15 +1,16 @@
 # io-ts-numbers
+
 [![License][]](https://opensource.org/licenses/ISC)
 [![NPM Package][]](https://npmjs.org/package/io-ts-numbers)
 
-[License]: https://img.shields.io/badge/License-ISC-blue.svg
-[NPM Package]: https://img.shields.io/npm/v/io-ts-numbers.svg
+[license]: https://img.shields.io/badge/License-ISC-blue.svg
+[npm package]: https://img.shields.io/npm/v/io-ts-numbers.svg
 
 > io-ts library for numbers
 
 ## Install
 
-``` shell
+```shell
 npm install io-ts-numbers
 ```
 
@@ -38,6 +39,7 @@ integer.
 ## Related
 
 - [io-ts-bigint](https://github.com/EricCrosson/numbers-ts/blob/master/packages/io-ts-bigint)
+- [fast-check-numbers](https://github.com/EricCrosson/numbers-ts/tree/master/packages/fast-check-numbers)
 
 ## Acknowledgments
 
