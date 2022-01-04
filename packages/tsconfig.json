@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "fast-check-bigint"
+    },
+    {
+      "path": "fast-check-numbers"
+    },
+    {
+      "path": "io-ts-bigint"
+    },
+    {
+      "path": "io-ts-numbers"
+    }
+  ]
+}

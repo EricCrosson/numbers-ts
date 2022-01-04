@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/EricCrosson/numbers-ts#readme",
   "scripts": {
+    "build": "tsc --build --incremental --verbose .",
     "lint-staged-packages": "npm run --workspaces lint-staged"
   },
-  "pre-commit": "lint-staged-packages"
+  "pre-commit": "lint-staged-packages",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }

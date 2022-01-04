@@ -10,5 +10,10 @@
   ],
   "compilerOptions": {
     "outDir": "./dist"
-  }
+  },
+  "references": [
+    {
+      "path": "../io-ts-numbers"
+    }
+  ]
 }
