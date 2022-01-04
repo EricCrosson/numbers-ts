@@ -1,6 +1,6 @@
 {
   "name": "io-ts-numbers",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.3",
   "description": "io-ts library for numbers",
   "keywords": [
     "io-ts",
