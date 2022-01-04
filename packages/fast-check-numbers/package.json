@@ -1,6 +1,6 @@
 {
   "name": "fast-check-numbers",
-  "version": "1.1.1",
+  "version": "0.0.0-semantically-released",
   "description": "fast-check arbitraries for narrowed numeric types",
   "keywords": [
     "fast-check",
