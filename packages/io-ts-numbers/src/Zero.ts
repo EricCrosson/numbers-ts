@@ -14,9 +14,15 @@ export interface ZeroBrand {
 /**
  * @since 0.0.1
  */
-export const Zero = t.brand(
-  t.number,
-  (n): n is t.Branded<number, ZeroBrand> => 0 === n,
+export const Zero = t.intersection(
+  [
+    t.brand(
+      t.number,
+      (n): n is t.Branded<number, ZeroBrand> => 0 === n,
+      'Zero',
+    ),
+    t.Int,
+  ],
   'Zero',
 )
 

@@ -1,6 +1,6 @@
 ---
 title: ZeroFromString.ts
-nav_order: 17
+nav_order: 27
 parent: Modules
 ---
 
@@ -25,7 +25,7 @@ Added in v0.0.1
 
 ```ts
 export declare const ZeroFromString: Type<
-  Branded<number, ZeroBrand>,
+  number & Brand<ZeroBrand> & Brand<IntBrand>,
   string,
   unknown
 >
