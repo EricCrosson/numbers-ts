@@ -1,6 +1,6 @@
 ---
 title: Zero.ts
-nav_order: 16
+nav_order: 26
 parent: Modules
 ---
 
@@ -26,7 +26,9 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const Zero: t.BrandC<t.NumberC, ZeroBrand>
+export declare const Zero: t.IntersectionC<
+  [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
+>
 ```
 
 Added in v0.0.1

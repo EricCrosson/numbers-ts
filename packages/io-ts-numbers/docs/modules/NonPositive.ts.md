@@ -1,6 +1,6 @@
 ---
 title: NonPositive.ts
-nav_order: 9
+nav_order: 13
 parent: Modules
 ---
 
@@ -26,7 +26,12 @@ Added in v0.0.1
 
 ```ts
 export declare const NonPositive: t.UnionC<
-  [t.BrandC<t.NumberC, NegativeBrand>, t.BrandC<t.NumberC, ZeroBrand>]
+  [
+    t.BrandC<t.NumberC, NegativeBrand>,
+    t.IntersectionC<
+      [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
+    >,
+  ]
 >
 ```
 

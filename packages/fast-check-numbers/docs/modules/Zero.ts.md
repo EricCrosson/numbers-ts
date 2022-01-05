@@ -24,7 +24,9 @@ Added in v1.0.0
 **Signature**
 
 ```ts
-export declare const ZeroArbitrary: fc.Arbitrary<Branded<number, ZeroBrand>>
+export declare const ZeroArbitrary: fc.Arbitrary<
+  number & Brand<ZeroBrand> & Brand<IntBrand>
+>
 ```
 
 Added in v1.0.0

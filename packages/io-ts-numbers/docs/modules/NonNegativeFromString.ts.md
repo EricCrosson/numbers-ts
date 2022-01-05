@@ -1,6 +1,6 @@
 ---
 title: NonNegativeFromString.ts
-nav_order: 8
+nav_order: 10
 parent: Modules
 ---
 
@@ -25,7 +25,8 @@ Added in v0.0.1
 
 ```ts
 export declare const NonNegativeFromString: Type<
-  Branded<number, ZeroBrand> | Branded<number, PositiveBrand>,
+  | (number & Brand<ZeroBrand> & Brand<IntBrand>)
+  | Branded<number, PositiveBrand>,
   string,
   unknown
 >

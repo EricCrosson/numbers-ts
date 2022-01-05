@@ -1,6 +1,6 @@
 import { testProp } from 'ava-fast-check'
 import { Int } from 'io-ts'
-import { Negative } from 'io-ts-numbers'
+import { Negative, NegativeInt } from 'io-ts-numbers'
 
 import { NegativeIntArbitrary } from '../../src/NegativeInt'
 
@@ -10,6 +10,7 @@ testProp(
   (t, num) => {
     t.true(Negative.is(num))
     t.true(Int.is(num))
+    t.true(NegativeInt.is(num))
   },
   {
     verbose: true,
