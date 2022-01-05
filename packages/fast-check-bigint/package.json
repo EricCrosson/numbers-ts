@@ -48,7 +48,7 @@
     "ava-fast-check": "4.0.2",
     "codecov": "3.8.2",
     "docs-ts": "0.6.10",
-    "eslint": "7.30.0",
+    "eslint": "7.32.0",
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-ava": "10.5.0",
     "eslint-plugin-fp-ts": "0.2.1",
