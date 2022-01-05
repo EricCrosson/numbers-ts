@@ -11,4 +11,4 @@ import { Positive } from 'io-ts-numbers'
  */
 export const PositiveIntArbitrary: fc.Arbitrary<Positive & t.Int> = fc
   .integer({ min: 1 })
-  .filter((n): n is Positive & t.Int => Positive.is(n) && t.Int.is(n))
+  .filter((n): n is Positive & t.Int => 0 < n && Number.isInteger(n))

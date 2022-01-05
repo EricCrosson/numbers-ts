@@ -11,4 +11,4 @@ import { Positive } from 'io-ts-numbers'
 export const PositiveArbitrary: fc.Arbitrary<Positive> = fc
   .tuple(fc.float(), fc.integer())
   .map(([f, i]) => f * i)
-  .filter(Positive.is)
+  .filter((n): n is Positive => 0 < n)

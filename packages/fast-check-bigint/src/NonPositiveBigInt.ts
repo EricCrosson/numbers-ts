@@ -10,4 +10,6 @@ import { NonPositiveBigInt } from 'io-ts-bigint'
  */
 export const NonPositiveBigIntArbitrary: fc.Arbitrary<NonPositiveBigInt> = fc
   .bigInt({ max: BigInt(0) })
-  .filter(NonPositiveBigInt.is)
+  .filter(
+    (n): n is NonPositiveBigInt => typeof n === 'bigint' && n <= BigInt(0),
+  )

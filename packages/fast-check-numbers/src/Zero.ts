@@ -10,4 +10,4 @@ import { Zero } from 'io-ts-numbers'
  */
 export const ZeroArbitrary: fc.Arbitrary<Zero> = fc
   .oneof(fc.constant(0), fc.constant(-0))
-  .filter(Zero.is)
+  .filter((n): n is Zero => n === 0)

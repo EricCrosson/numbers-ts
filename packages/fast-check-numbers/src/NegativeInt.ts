@@ -11,4 +11,4 @@ import { Negative } from 'io-ts-numbers'
  */
 export const NegativeIntArbitrary: fc.Arbitrary<Negative & t.Int> = fc
   .integer({ max: -1 })
-  .filter((n): n is Negative & t.Int => Negative.is(n) && t.Int.is(n))
+  .filter((n): n is Negative & t.Int => n < 0 && Number.isInteger(n))

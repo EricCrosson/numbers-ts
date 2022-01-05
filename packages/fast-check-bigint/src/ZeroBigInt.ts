@@ -10,4 +10,4 @@ import { ZeroBigInt } from 'io-ts-bigint'
  */
 export const ZeroBigIntArbitrary: fc.Arbitrary<ZeroBigInt> = fc
   .constant(BigInt(0))
-  .filter(ZeroBigInt.is)
+  .filter((n): n is ZeroBigInt => typeof n === 'bigint' && n === BigInt(0))

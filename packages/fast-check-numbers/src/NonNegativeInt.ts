@@ -13,4 +13,4 @@ export const NonNegativeIntArbitrary: fc.Arbitrary<
   NonNegative & t.Int
 > = fc
   .integer({ min: 0 })
-  .filter((n): n is NonNegative & t.Int => NonNegative.is(n) && t.Int.is(n))
+  .filter((n): n is NonNegative & t.Int => 0 <= n && Number.isInteger(n))

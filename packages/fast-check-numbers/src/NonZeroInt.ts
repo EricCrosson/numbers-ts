@@ -13,4 +13,4 @@ export const NonZeroIntArbitrary: fc.Arbitrary<
   NonZero & t.Int
 > = fc
   .integer()
-  .filter((n): n is NonZero & t.Int => NonZero.is(n) && t.Int.is(n))
+  .filter((n): n is NonZero & t.Int => n !== 0 && Number.isInteger(n))

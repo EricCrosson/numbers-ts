@@ -8,4 +8,6 @@ import * as t from 'io-ts'
 /**
  * @since 1.1.0
  */
-export const IntArbitrary: fc.Arbitrary<t.Int> = fc.integer().filter(t.Int.is)
+export const IntArbitrary: fc.Arbitrary<t.Int> = fc
+  .integer()
+  .filter((n): n is t.Int => Number.isInteger(n))

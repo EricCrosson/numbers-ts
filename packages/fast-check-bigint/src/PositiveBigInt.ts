@@ -10,4 +10,4 @@ import { PositiveBigInt } from 'io-ts-bigint'
  */
 export const PositiveBigIntArbitrary: fc.Arbitrary<PositiveBigInt> = fc
   .bigInt({ min: BigInt(1) })
-  .filter(PositiveBigInt.is)
+  .filter((n): n is PositiveBigInt => typeof n === 'bigint' && BigInt(0) < n)
