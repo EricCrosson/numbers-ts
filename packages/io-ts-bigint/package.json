@@ -29,6 +29,7 @@
     "build": "tsc --build --incremental --verbose .",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "docs": "docs-ts",
+    "postdocs": "prettier --write docs",
     "lint": "eslint --ext ts . package.json",
     "lint:fix": "eslint --ext ts --fix . package.json",
     "lint-staged": "lint-staged",

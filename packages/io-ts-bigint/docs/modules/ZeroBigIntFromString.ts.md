@@ -24,7 +24,11 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const ZeroBigIntFromString: Type<Branded<bigint, ZeroBigIntBrand>, string, unknown>
+export declare const ZeroBigIntFromString: Type<
+  Branded<bigint, ZeroBigIntBrand>,
+  string,
+  unknown
+>
 ```
 
 Added in v0.0.1

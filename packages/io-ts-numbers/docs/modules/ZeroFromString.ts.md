@@ -24,7 +24,11 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const ZeroFromString: Type<Branded<number, ZeroBrand>, string, unknown>
+export declare const ZeroFromString: Type<
+  Branded<number, ZeroBrand>,
+  string,
+  unknown
+>
 ```
 
 Added in v0.0.1

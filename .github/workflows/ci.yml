@@ -21,3 +21,4 @@ jobs:
           npm ci
           npm run build
           npm run --workspaces test
+          git diff --exit-code './**/docs/**'

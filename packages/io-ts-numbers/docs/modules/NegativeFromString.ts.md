@@ -24,7 +24,11 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const NegativeFromString: Type<Branded<number, NegativeBrand>, string, unknown>
+export declare const NegativeFromString: Type<
+  Branded<number, NegativeBrand>,
+  string,
+  unknown
+>
 ```
 
 Added in v0.0.1

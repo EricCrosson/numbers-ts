@@ -24,7 +24,11 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const NegativeBigIntFromString: Type<Branded<bigint, NegativeBigIntBrand>, string, unknown>
+export declare const NegativeBigIntFromString: Type<
+  Branded<bigint, NegativeBigIntBrand>,
+  string,
+  unknown
+>
 ```
 
 Added in v0.0.1
