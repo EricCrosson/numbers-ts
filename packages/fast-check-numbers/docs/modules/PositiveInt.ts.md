@@ -24,7 +24,9 @@ Added in v1.1.0
 **Signature**
 
 ```ts
-export declare const PositiveIntArbitrary: fc.Arbitrary<number & t.Brand<PositiveBrand> & t.Brand<t.IntBrand>>
+export declare const PositiveIntArbitrary: fc.Arbitrary<
+  number & t.Brand<PositiveBrand> & t.Brand<t.IntBrand>
+>
 ```
 
 Added in v1.1.0

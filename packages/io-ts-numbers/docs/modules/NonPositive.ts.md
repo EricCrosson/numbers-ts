@@ -25,7 +25,9 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const NonPositive: t.UnionC<[t.BrandC<t.NumberC, NegativeBrand>, t.BrandC<t.NumberC, ZeroBrand>]>
+export declare const NonPositive: t.UnionC<
+  [t.BrandC<t.NumberC, NegativeBrand>, t.BrandC<t.NumberC, ZeroBrand>]
+>
 ```
 
 Added in v0.0.1

@@ -24,7 +24,11 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const PositiveFromString: Type<Branded<number, PositiveBrand>, string, unknown>
+export declare const PositiveFromString: Type<
+  Branded<number, PositiveBrand>,
+  string,
+  unknown
+>
 ```
 
 Added in v0.0.1

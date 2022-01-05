@@ -24,7 +24,9 @@ Added in v1.0.0
 **Signature**
 
 ```ts
-export declare const NonPositiveArbitrary: fc.Arbitrary<Branded<number, NegativeBrand> | Branded<number, ZeroBrand>>
+export declare const NonPositiveArbitrary: fc.Arbitrary<
+  Branded<number, NegativeBrand> | Branded<number, ZeroBrand>
+>
 ```
 
 Added in v1.0.0
