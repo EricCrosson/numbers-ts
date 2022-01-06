@@ -41,7 +41,7 @@
     "posttest": "npm run docs"
   },
   "devDependencies": {
-    "@ericcrosson/eslint-config": "2.0.1",
+    "@ericcrosson/eslint-config": "3.0.0",
     "@types/node": "16.11.19",
     "@typescript-eslint/eslint-plugin": "5.9.0",
     "@typescript-eslint/parser": "5.9.0",
