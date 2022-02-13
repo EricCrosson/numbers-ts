@@ -55,7 +55,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-security": "1.4.0",
     "fast-check": "2.21.0",
-    "lint-staged": "12.3.3",
+    "lint-staged": "12.3.4",
     "nyc": "15.1.0",
     "pre-commit": "1.2.2",
     "prettier": "2.5.1",
