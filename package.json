@@ -23,7 +23,7 @@
   "pre-commit": "lint-staged-packages",
   "devDependencies": {
     "@semantic-release/git": "10.0.1",
-    "multi-semantic-release": "2.11.0",
+    "multi-semantic-release": "2.11.1",
     "patch-semantic-release-npm-for-msr": "1.0.0",
     "semantic-release": "19.0.2",
     "typescript": "4.5.5"
