@@ -1,28 +1,38 @@
 {
   "name": "numbers-ts",
   "version": "0.0.1",
-  "description": "Monorepo containing numerical codecs and arbitraries",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "description": "Monorepo containing numerical codecs and arbitraries",
+  "homepage": "https://github.com/EricCrosson/numbers-ts#readme",
+  "bugs": {
+    "url": "https://github.com/EricCrosson/numbers-ts/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EricCrosson/numbers-ts.git"
   },
-  "author": "Eric Crosson",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EricCrosson/numbers-ts/issues"
-  },
-  "homepage": "https://github.com/EricCrosson/numbers-ts#readme",
+  "author": "Eric Crosson",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "tsc --build --incremental --verbose .",
-    "lint-staged-packages": "npm run --workspaces lint-staged"
+    "lint-staged": "lint-staged"
   },
-  "pre-commit": "lint-staged-packages",
+  "pre-commit": "lint-staged",
   "devDependencies": {
+    "@ericcrosson/eslint-config": "3.0.0",
     "@semantic-release/git": "10.0.1",
+    "eslint": "8.11.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-ava": "13.2.0",
+    "eslint-plugin-fp-ts": "0.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-json-format": "2.0.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-security": "1.4.0",
+    "lint-staged": "12.3.7",
     "multi-semantic-release": "2.11.1",
     "patch-semantic-release-npm-for-msr": "1.0.0",
     "semantic-release": "19.0.2",
