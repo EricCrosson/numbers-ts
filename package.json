@@ -35,6 +35,7 @@
     "lint-staged": "12.3.7",
     "multi-semantic-release": "2.11.3",
     "patch-semantic-release-npm-for-msr": "1.0.0",
+    "pre-commit": "1.2.2",
     "semantic-release": "19.0.2",
     "typescript": "4.6.3"
   }
