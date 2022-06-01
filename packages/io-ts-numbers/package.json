@@ -37,7 +37,7 @@
     "test": "npm run lint && npm run prettier:check && nyc ava && npm run docs"
   },
   "devDependencies": {
-    "@types/node": "16.11.36",
+    "@types/node": "16.11.38",
     "ava": "4.2.0",
     "ava-fast-check": "5.0.0",
     "codecov": "3.8.2",
