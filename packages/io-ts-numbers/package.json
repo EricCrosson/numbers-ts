@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@types/node": "16.11.38",
-    "ava": "4.2.0",
+    "ava": "4.3.0",
     "ava-fast-check": "5.0.0",
     "codecov": "3.8.2",
     "docs-ts": "0.6.10",
