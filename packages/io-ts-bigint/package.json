@@ -43,7 +43,7 @@
     "ava-fast-check": "6.0.0",
     "codecov": "3.8.2",
     "docs-ts": "0.6.10",
-    "fast-check": "3.1.4",
+    "fast-check": "3.2.0",
     "nyc": "15.1.0",
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
