@@ -12,11 +12,8 @@
 
 ## Development
 
-First, ensure you're on the expected Node.js version (as described by `.nvmrc`).
-
-Next,
-
 ```
 npm install
 npm run build
+npm test
 ```
