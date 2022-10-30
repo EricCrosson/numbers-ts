@@ -18,6 +18,7 @@
   ],
   "scripts": {
     "build": "tsc --build --incremental --verbose .",
+    "test": "npm run --workspaces test",
     "lint-staged": "lint-staged"
   },
   "pre-commit": "lint-staged",
