@@ -38,7 +38,7 @@
     "posttest": "npm run docs"
   },
   "devDependencies": {
-    "ava": "5.0.1",
+    "ava": "5.1.0",
     "ava-fast-check": "6.0.0",
     "codecov": "3.8.2",
     "docs-ts": "0.7.0",
