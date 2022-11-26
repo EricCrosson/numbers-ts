@@ -28,7 +28,8 @@
     "clean": "rm -rf -- dist",
     "build": "tsc --build --incremental --verbose .",
     "docs": "docs-ts",
-    "test": "nyc ava && npm run docs"
+    "test": "nyc ava",
+    "posttest": "npm run docs"
   },
   "devDependencies": {
     "ava": "5.1.0",
