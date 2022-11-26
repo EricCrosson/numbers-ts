@@ -28,7 +28,7 @@
     "clean": "rm -rf -- dist",
     "build": "tsc --build --incremental --verbose .",
     "docs": "docs-ts",
-    "test": "npm run lint && npm run prettier:check && nyc ava && npm run docs"
+    "test": "nyc ava && npm run docs"
   },
   "devDependencies": {
     "ava": "5.1.0",
