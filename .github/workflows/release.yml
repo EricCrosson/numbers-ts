@@ -30,8 +30,6 @@ jobs:
         run: npm run build
       - name: Run tests
         run: npm run --workspaces test
-      - name: Check docs for accuracy
-        run: git diff --exit-code './**/docs/**'
       - name: Release
         run: |
           find . -name 'index.js' | grep @semantic-release/npm/index.js | xargs -I {} npx patch-semantic-release-npm-for-msr --file {}
