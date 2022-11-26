@@ -10,8 +10,16 @@
     {
       "matchPackagePatterns": ["ava", "ava-fast-check", "fast-check"],
       "groupName": ["ava packages"]
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "enbaled": false
     }
   ],
   "timezone": "America/Chicago",
-  "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"]
+  "schedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
+  ]
 }
