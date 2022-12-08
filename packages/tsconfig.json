@@ -11,6 +11,9 @@
       "path": "io-ts-bigint"
     },
     {
+      "path": "io-ts-bignumber"
+    },
+    {
       "path": "io-ts-numbers"
     }
   ]
