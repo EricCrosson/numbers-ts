@@ -1,9 +1,7 @@
 # io-ts-numbers
 
-[![License][]](https://opensource.org/licenses/ISC)
 [![NPM Package][]](https://npmjs.org/package/io-ts-numbers)
 
-[license]: https://img.shields.io/badge/License-ISC-blue.svg
 [npm package]: https://img.shields.io/npm/v/io-ts-numbers.svg
 
 > io-ts library for numbers
