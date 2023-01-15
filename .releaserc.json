@@ -17,12 +17,6 @@
         ]
       }
     ],
-    [
-      "@semantic-release/github",
-      {
-        "successComment": false
-      }
-    ],
-    "@semantic-release-extras/monorepo-github-comment"
+    "@semantic-release-extras/github-comment-specific"
   ]
 }
