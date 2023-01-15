@@ -1,6 +1,6 @@
 {
   "name": "io-ts-bigint",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "description": "io-ts library for bigints",
   "keywords": [
     "io-ts",
