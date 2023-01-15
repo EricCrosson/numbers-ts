@@ -8,6 +8,9 @@
       "@semantic-release/git",
       {
         "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md",
           "packages/**/package.json",
           "packages/**/package-lock.json",
           "packages/**/CHANGELOG.md"
