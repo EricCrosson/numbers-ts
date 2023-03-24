@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@semantic-release-extras/github-comment-specific": "1.0.6",
-    "@semantic-release/changelog": "6.0.2",
+    "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "multi-semantic-release": "3.0.2",
     "patch-semantic-release-npm-for-msr": "1.0.0",
