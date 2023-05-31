@@ -34,7 +34,7 @@
     "ava": "5.3.0",
     "ava-fast-check": "6.0.0",
     "docs-ts": "0.8.0",
-    "fast-check": "3.9.0",
+    "fast-check": "3.10.0",
     "nyc": "15.1.0",
     "ts-node": "10.9.1",
     "typescript": "5.0.4"
