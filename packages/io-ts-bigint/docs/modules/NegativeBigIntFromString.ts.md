@@ -28,7 +28,7 @@ export declare const NegativeBigIntFromString: Type<
   Branded<bigint, NegativeBigIntBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.0.1

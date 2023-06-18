@@ -26,7 +26,7 @@ Added in v1.1.0
 ```ts
 export declare const PositiveIntArbitrary: fc.Arbitrary<
   number & t.Brand<PositiveBrand> & t.Brand<t.IntBrand>
->
+>;
 ```
 
 Added in v1.1.0

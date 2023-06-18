@@ -30,9 +30,9 @@ export declare const NonNegative: t.UnionC<
     t.IntersectionC<
       [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
     >,
-    t.BrandC<t.NumberC, PositiveBrand>,
+    t.BrandC<t.NumberC, PositiveBrand>
   ]
->
+>;
 ```
 
 Added in v0.0.1
@@ -42,7 +42,7 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export type NonNegative = t.TypeOf<typeof NonNegative>
+export type NonNegative = t.TypeOf<typeof NonNegative>;
 ```
 
 Added in v0.0.1

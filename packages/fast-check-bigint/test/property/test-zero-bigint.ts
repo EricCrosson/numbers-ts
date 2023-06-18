@@ -1,16 +1,19 @@
-import { testProp } from 'ava-fast-check'
-import { ZeroBigInt } from 'io-ts-bigint'
+import test from "node:test";
+import { strict as assert } from "node:assert";
 
-import { ZeroBigIntArbitrary } from '../../src/ZeroBigInt'
+import fc from "fast-check";
+import { ZeroBigInt } from "io-ts-bigint";
 
-testProp(
-  'should yield zero',
-  [ZeroBigIntArbitrary],
-  (t, num) => {
-    t.true(ZeroBigInt.is(num))
-  },
-  {
-    verbose: true,
-    numRuns: 100,
-  },
-)
+import { ZeroBigIntArbitrary } from "../../src/ZeroBigInt";
+
+test("should yield zero", () => {
+  fc.assert(
+    fc.property(ZeroBigIntArbitrary, (num) => {
+      assert.ok(ZeroBigInt.is(num));
+    }),
+    {
+      verbose: true,
+      numRuns: 100,
+    }
+  );
+});

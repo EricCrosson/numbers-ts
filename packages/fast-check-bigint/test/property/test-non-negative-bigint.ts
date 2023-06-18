@@ -1,16 +1,19 @@
-import { testProp } from 'ava-fast-check'
-import { NonNegativeBigInt } from 'io-ts-bigint'
+import test from "node:test";
+import { strict as assert } from "node:assert";
 
-import { NonNegativeBigIntArbitrary } from '../../src/NonNegativeBigInt'
+import fc from "fast-check";
+import { NonNegativeBigInt } from "io-ts-bigint";
 
-testProp(
-  'should yield non-negative integers',
-  [NonNegativeBigIntArbitrary],
-  (t, num) => {
-    t.true(NonNegativeBigInt.is(num))
-  },
-  {
-    verbose: true,
-    numRuns: 100,
-  },
-)
+import { NonNegativeBigIntArbitrary } from "../../src/NonNegativeBigInt";
+
+test("should yield non-negative integers", () => {
+  fc.assert(
+    fc.property(NonNegativeBigIntArbitrary, (num) => {
+      assert.ok(NonNegativeBigInt.is(num));
+    }),
+    {
+      verbose: true,
+      numRuns: 100,
+    }
+  );
+});

@@ -29,7 +29,7 @@ export declare const NonPositiveFromString: Type<
   | Branded<number, NegativeBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.0.1

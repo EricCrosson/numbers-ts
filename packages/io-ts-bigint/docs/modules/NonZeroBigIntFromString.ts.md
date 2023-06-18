@@ -25,10 +25,10 @@ Added in v0.0.1
 
 ```ts
 export declare const NonZeroBigIntFromString: Type<
-  Branded<bigint, NegativeBigIntBrand> | Branded<bigint, PositiveBigIntBrand>,
+  Branded<bigint, PositiveBigIntBrand> | Branded<bigint, NegativeBigIntBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.0.1

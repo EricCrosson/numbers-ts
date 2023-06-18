@@ -1,16 +1,19 @@
-import { testProp } from 'ava-fast-check'
-import { NonZero } from 'io-ts-numbers'
+import test from "node:test";
+import { strict as assert } from "node:assert";
 
-import { NonZeroArbitrary } from '../../src/NonZero'
+import fc from "fast-check";
+import { NonZero } from "io-ts-numbers";
 
-testProp(
-  'should yield non-zero numbers',
-  [NonZeroArbitrary],
-  (t, num) => {
-    t.true(NonZero.is(num))
-  },
-  {
-    verbose: true,
-    numRuns: 100,
-  },
-)
+import { NonZeroArbitrary } from "../../src/NonZero";
+
+test("should yield non-zero numbers", () => {
+  fc.assert(
+    fc.property(NonZeroArbitrary, (num) => {
+      assert.ok(NonZero.is(num));
+    }),
+    {
+      verbose: true,
+      numRuns: 100,
+    }
+  );
+});

@@ -28,7 +28,7 @@ export declare const ZeroBigIntFromString: Type<
   Branded<bigint, ZeroBigIntBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.0.1

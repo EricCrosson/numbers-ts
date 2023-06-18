@@ -25,16 +25,7 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export declare const NumberFromString: NumberFromStringC
-```
-
-**Example**
-
-```ts
-import { NumberFromString } from 'io-ts-numbers/lib/NumberFromString'
-
-NumberFromString.decode('1') // right(1)
-NumberFromString.decode('1.1') // right(1.1)
+export declare const NumberFromString: NumberFromStringC;
 ```
 
 Added in v0.0.1
@@ -44,7 +35,7 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export type NumberFromStringC = t.Type<number, string>
+export type NumberFromStringC = t.Type<number, string>;
 ```
 
 Added in v0.0.1

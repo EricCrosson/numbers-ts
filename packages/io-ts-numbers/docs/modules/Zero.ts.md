@@ -28,7 +28,7 @@ Added in v0.0.1
 ```ts
 export declare const Zero: t.IntersectionC<
   [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
->
+>;
 ```
 
 Added in v0.0.1
@@ -38,7 +38,7 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export type Zero = t.TypeOf<typeof Zero>
+export type Zero = t.TypeOf<typeof Zero>;
 ```
 
 Added in v0.0.1
@@ -49,7 +49,7 @@ Added in v0.0.1
 
 ```ts
 export interface ZeroBrand {
-  readonly Zero: unique symbol
+  readonly Zero: unique symbol;
 }
 ```
 

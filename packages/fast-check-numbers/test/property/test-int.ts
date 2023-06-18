@@ -1,16 +1,19 @@
-import { testProp } from 'ava-fast-check'
-import { Int } from 'io-ts'
+import test from "node:test";
+import { strict as assert } from "node:assert";
 
-import { IntArbitrary } from '../../src/Int'
+import fc from "fast-check";
+import { Int } from "io-ts";
 
-testProp(
-  'should yield integers',
-  [IntArbitrary],
-  (t, num) => {
-    t.true(Int.is(num))
-  },
-  {
-    verbose: true,
-    numRuns: 100,
-  },
-)
+import { IntArbitrary } from "../../src/Int";
+
+test("should yield integers", () => {
+  fc.assert(
+    fc.property(IntArbitrary, (num) => {
+      assert.ok(Int.is(num));
+    }),
+    {
+      verbose: true,
+      numRuns: 100,
+    }
+  );
+});

@@ -28,7 +28,7 @@ export declare const ZeroFromString: Type<
   number & Brand<ZeroBrand> & Brand<IntBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.0.1

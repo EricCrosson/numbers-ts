@@ -1,16 +1,19 @@
-import { testProp } from 'ava-fast-check'
-import { NonPositive } from 'io-ts-numbers'
+import test from "node:test";
+import { strict as assert } from "node:assert";
 
-import { NonPositiveArbitrary } from '../../src/NonPositive'
+import fc from "fast-check";
+import { NonPositive } from "io-ts-numbers";
 
-testProp(
-  'should yield non-positive numbers',
-  [NonPositiveArbitrary],
-  (t, num) => {
-    t.true(NonPositive.is(num))
-  },
-  {
-    verbose: true,
-    numRuns: 100,
-  },
-)
+import { NonPositiveArbitrary } from "../../src/NonPositive";
+
+test("should yield non-positive numbers", () => {
+  fc.assert(
+    fc.property(NonPositiveArbitrary, (num) => {
+      assert.ok(NonPositive.is(num));
+    }),
+    {
+      verbose: true,
+      numRuns: 100,
+    }
+  );
+});

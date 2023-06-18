@@ -25,8 +25,8 @@ Added in v0.0.1
 
 ```ts
 export declare const NonPositiveBigIntArbitrary: fc.Arbitrary<
-  Branded<bigint, NegativeBigIntBrand> | Branded<bigint, ZeroBigIntBrand>
->
+  Branded<bigint, ZeroBigIntBrand> | Branded<bigint, NegativeBigIntBrand>
+>;
 ```
 
 Added in v0.0.1

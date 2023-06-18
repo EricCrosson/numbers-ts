@@ -26,7 +26,7 @@ Added in v1.0.0
 ```ts
 export declare const PositiveArbitrary: fc.Arbitrary<
   Branded<number, PositiveBrand>
->
+>;
 ```
 
 Added in v1.0.0

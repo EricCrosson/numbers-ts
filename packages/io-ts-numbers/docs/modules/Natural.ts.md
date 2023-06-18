@@ -33,12 +33,12 @@ export declare const Natural: t.IntersectionC<
         t.IntersectionC<
           [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
         >,
-        t.BrandC<t.NumberC, PositiveBrand>,
+        t.BrandC<t.NumberC, PositiveBrand>
       ]
     >,
-    t.BrandC<t.NumberC, FiniteBrand>,
+    t.BrandC<t.NumberC, FiniteBrand>
   ]
->
+>;
 ```
 
 Added in v0.0.1
@@ -48,7 +48,7 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export type Natural = t.TypeOf<typeof Natural>
+export type Natural = t.TypeOf<typeof Natural>;
 ```
 
 Added in v0.0.1

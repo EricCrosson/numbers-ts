@@ -25,8 +25,8 @@ Added in v1.0.0
 
 ```ts
 export declare const NonPositiveArbitrary: fc.Arbitrary<
-  Branded<number, NegativeBrand> | (number & Brand<ZeroBrand> & Brand<IntBrand>)
->
+  (number & Brand<ZeroBrand> & Brand<IntBrand>) | Branded<number, NegativeBrand>
+>;
 ```
 
 Added in v1.0.0

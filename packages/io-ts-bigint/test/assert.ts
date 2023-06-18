@@ -1,34 +1,31 @@
-import { ExecutionContext } from 'ava'
-import * as E from 'fp-ts/Either'
-import { pipe } from 'fp-ts/function'
-import * as t from 'io-ts'
+import { strict as assert } from "node:assert";
 
-export function includes<C extends t.Mixed>(
-    t: ExecutionContext,
-    codec: C,
-    a: bigint,
-): void {
-    pipe(
-        codec.decode(a),
-        E.fold(
-            () => t.fail(`${codec.name} should not include ${a}`),
-            () => t.pass(),
-        ),
-    )
-}
-includes.title = (providedTitle = ''): string => providedTitle
+import * as E from "fp-ts/Either";
+import { pipe } from "fp-ts/function";
+import * as t from "io-ts";
 
-export function excludes<C extends t.Mixed>(
-    t: ExecutionContext,
-    codec: C,
-    a: bigint,
-): void {
+export const includes =
+  <C extends t.Mixed>(codec: C, a: bigint) =>
+  (): void => {
     pipe(
-        codec.decode(a),
-        E.fold(
-            () => t.pass(),
-            () => t.fail(`${codec.name} should include ${a}`),
-        ),
-    )
-}
-excludes.title = (providedTitle = ''): string => providedTitle
+      codec.decode(a),
+      E.fold(
+        () => assert.fail(`${codec.name} should not include ${a}`),
+        () => assert.ok(true)
+      )
+    );
+  };
+includes.title = (providedTitle = ""): string => providedTitle;
+
+export const excludes =
+  <C extends t.Mixed>(codec: C, a: bigint) =>
+  (): void => {
+    pipe(
+      codec.decode(a),
+      E.fold(
+        () => assert.ok(true),
+        () => assert.fail(`${codec.name} should include ${a}`)
+      )
+    );
+  };
+excludes.title = (providedTitle = ""): string => providedTitle;

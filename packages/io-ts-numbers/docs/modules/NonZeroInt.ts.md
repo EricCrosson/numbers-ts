@@ -30,9 +30,9 @@ export declare const NonZeroInt: t.IntersectionC<
     t.UnionC<
       [t.BrandC<t.NumberC, NegativeBrand>, t.BrandC<t.NumberC, PositiveBrand>]
     >,
-    t.BrandC<t.NumberC, t.IntBrand>,
+    t.BrandC<t.NumberC, t.IntBrand>
   ]
->
+>;
 ```
 
 Added in v0.1.0
@@ -42,7 +42,7 @@ Added in v0.1.0
 **Signature**
 
 ```ts
-export type NonZeroInt = t.TypeOf<typeof NonZeroInt>
+export type NonZeroInt = t.TypeOf<typeof NonZeroInt>;
 ```
 
 Added in v0.1.0

@@ -1,16 +1,19 @@
-import { testProp } from 'ava-fast-check'
-import { Zero } from 'io-ts-numbers'
+import test from "node:test";
+import { strict as assert } from "node:assert";
 
-import { ZeroArbitrary } from '../../src/Zero'
+import fc from "fast-check";
+import { Zero } from "io-ts-numbers";
 
-testProp(
-  'should yield zero',
-  [ZeroArbitrary],
-  (t, num) => {
-    t.true(Zero.is(num))
-  },
-  {
-    verbose: true,
-    numRuns: 100,
-  },
-)
+import { ZeroArbitrary } from "../../src/Zero";
+
+test("should yield zero", () => {
+  fc.assert(
+    fc.property(ZeroArbitrary, (num) => {
+      assert.ok(Zero.is(num));
+    }),
+    {
+      verbose: true,
+      numRuns: 100,
+    }
+  );
+});

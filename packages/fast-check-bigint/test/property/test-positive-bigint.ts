@@ -1,16 +1,19 @@
-import { testProp } from 'ava-fast-check'
-import { PositiveBigInt } from 'io-ts-bigint'
+import test from "node:test";
+import { strict as assert } from "node:assert";
 
-import { PositiveBigIntArbitrary } from '../../src/PositiveBigInt'
+import fc from "fast-check";
+import { PositiveBigInt } from "io-ts-bigint";
 
-testProp(
-  'should yield positive integers',
-  [PositiveBigIntArbitrary],
-  (t, num) => {
-    t.true(PositiveBigInt.is(num))
-  },
-  {
-    verbose: true,
-    numRuns: 100,
-  },
-)
+import { PositiveBigIntArbitrary } from "../../src/PositiveBigInt";
+
+test("should yield positive integers", () => {
+  fc.assert(
+    fc.property(PositiveBigIntArbitrary, (num) => {
+      assert.ok(PositiveBigInt.is(num));
+    }),
+    {
+      verbose: true,
+      numRuns: 100,
+    }
+  );
+});

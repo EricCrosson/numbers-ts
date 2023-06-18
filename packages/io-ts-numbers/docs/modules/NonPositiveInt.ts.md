@@ -32,12 +32,12 @@ export declare const NonPositiveInt: t.IntersectionC<
         t.BrandC<t.NumberC, NegativeBrand>,
         t.IntersectionC<
           [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
-        >,
+        >
       ]
     >,
-    t.BrandC<t.NumberC, t.IntBrand>,
+    t.BrandC<t.NumberC, t.IntBrand>
   ]
->
+>;
 ```
 
 Added in v0.1.0
@@ -47,7 +47,7 @@ Added in v0.1.0
 **Signature**
 
 ```ts
-export type NonPositiveInt = t.TypeOf<typeof NonPositiveInt>
+export type NonPositiveInt = t.TypeOf<typeof NonPositiveInt>;
 ```
 
 Added in v0.1.0

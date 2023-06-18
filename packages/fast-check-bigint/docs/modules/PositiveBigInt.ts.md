@@ -26,7 +26,7 @@ Added in v0.0.1
 ```ts
 export declare const PositiveBigIntArbitrary: fc.Arbitrary<
   Branded<bigint, PositiveBigIntBrand>
->
+>;
 ```
 
 Added in v0.0.1

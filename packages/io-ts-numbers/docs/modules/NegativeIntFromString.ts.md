@@ -28,7 +28,7 @@ export declare const NegativeIntFromString: Type<
   number & Brand<NegativeBrand> & Brand<IntBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.1.0

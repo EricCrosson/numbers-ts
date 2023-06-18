@@ -28,9 +28,9 @@ Added in v0.0.1
 export declare const NonNegativeBigInt: t.UnionC<
   [
     t.BrandC<t.BigIntC, ZeroBigIntBrand>,
-    t.BrandC<t.BigIntC, PositiveBigIntBrand>,
+    t.BrandC<t.BigIntC, PositiveBigIntBrand>
   ]
->
+>;
 ```
 
 Added in v0.0.1
@@ -40,7 +40,7 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export type NonNegativeBigInt = t.TypeOf<typeof NonNegativeBigInt>
+export type NonNegativeBigInt = t.TypeOf<typeof NonNegativeBigInt>;
 ```
 
 Added in v0.0.1

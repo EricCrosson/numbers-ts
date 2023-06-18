@@ -25,11 +25,11 @@ Added in v0.1.0
 
 ```ts
 export declare const NonZeroIntFromString: Type<
-  | (number & Brand<NegativeBrand> & Brand<IntBrand>)
-  | (number & Brand<PositiveBrand> & Brand<IntBrand>),
+  | (number & Brand<PositiveBrand> & Brand<IntBrand>)
+  | (number & Brand<NegativeBrand> & Brand<IntBrand>),
   string,
   unknown
->
+>;
 ```
 
 Added in v0.1.0

@@ -28,7 +28,7 @@ export declare const PositiveBigIntFromString: Type<
   Branded<bigint, PositiveBigIntBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.0.1

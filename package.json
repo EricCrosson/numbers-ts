@@ -18,6 +18,7 @@
   ],
   "scripts": {
     "build": "tsc --build --incremental --verbose .",
+    "clean": "npm ru n--workspaces clean",
     "test": "npm run --workspaces test"
   },
   "devDependencies": {

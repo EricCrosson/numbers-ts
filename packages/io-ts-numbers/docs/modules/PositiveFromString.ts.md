@@ -28,7 +28,7 @@ export declare const PositiveFromString: Type<
   Branded<number, PositiveBrand>,
   string,
   unknown
->
+>;
 ```
 
 Added in v0.0.1

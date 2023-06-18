@@ -12,16 +12,23 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [lts/-2, lts/-1, lts/*]
+        node-version:
+          - lts/*
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: |
-          npm install --global npm
-          npm ci
-          npm run build
-          npm run --workspaces test
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compile TypeScript
+        run: npm run build
+
+      - name: Run tests
+        run: npm run --workspaces test

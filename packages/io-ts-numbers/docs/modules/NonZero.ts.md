@@ -27,7 +27,7 @@ Added in v0.0.1
 ```ts
 export declare const NonZero: t.UnionC<
   [t.BrandC<t.NumberC, NegativeBrand>, t.BrandC<t.NumberC, PositiveBrand>]
->
+>;
 ```
 
 Added in v0.0.1
@@ -37,7 +37,7 @@ Added in v0.0.1
 **Signature**
 
 ```ts
-export type NonZero = t.TypeOf<typeof NonZero>
+export type NonZero = t.TypeOf<typeof NonZero>;
 ```
 
 Added in v0.0.1

@@ -26,7 +26,7 @@ Added in v1.0.0
 ```ts
 export declare const ZeroArbitrary: fc.Arbitrary<
   number & Brand<ZeroBrand> & Brand<IntBrand>
->
+>;
 ```
 
 Added in v1.0.0
