@@ -33,7 +33,7 @@
     "@types/node": "20.4.0",
     "c8": "8.0.0",
     "docs-ts": "0.8.0",
-    "fast-check": "3.10.0",
+    "fast-check": "3.11.0",
     "typescript": "5.0.4",
     "tsx": "3.12.7"
   },
