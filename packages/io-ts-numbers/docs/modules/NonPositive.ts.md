@@ -30,7 +30,7 @@ export declare const NonPositive: t.UnionC<
     t.BrandC<t.NumberC, NegativeBrand>,
     t.IntersectionC<
       [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
-    >
+    >,
   ]
 >;
 ```

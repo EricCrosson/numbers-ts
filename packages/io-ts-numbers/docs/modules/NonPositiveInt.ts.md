@@ -32,10 +32,10 @@ export declare const NonPositiveInt: t.IntersectionC<
         t.BrandC<t.NumberC, NegativeBrand>,
         t.IntersectionC<
           [t.BrandC<t.NumberC, ZeroBrand>, t.BrandC<t.NumberC, t.IntBrand>]
-        >
+        >,
       ]
     >,
-    t.BrandC<t.NumberC, t.IntBrand>
+    t.BrandC<t.NumberC, t.IntBrand>,
   ]
 >;
 ```

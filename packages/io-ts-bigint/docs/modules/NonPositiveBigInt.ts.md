@@ -28,7 +28,7 @@ Added in v0.0.1
 export declare const NonPositiveBigInt: t.UnionC<
   [
     t.BrandC<t.BigIntC, NegativeBigIntBrand>,
-    t.BrandC<t.BigIntC, ZeroBigIntBrand>
+    t.BrandC<t.BigIntC, ZeroBigIntBrand>,
   ]
 >;
 ```

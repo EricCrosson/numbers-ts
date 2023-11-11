@@ -28,7 +28,7 @@
     "clean": "rm -rf -- dist",
     "build": "tsc --build --incremental --verbose .",
     "docs": "docs-ts",
-    "test": "c8 node --loader tsx --test test/**/test-*",
+    "test": "c8 node --import tsx --test test/**/test-*",
     "posttest": "npm run docs"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "docs-ts": "0.8.0",
     "fast-check": "3.13.2",
     "typescript": "5.0.4",
-    "tsx": "3.14.0"
+    "tsx": "4.1.1"
   },
   "peerDependencies": {
     "fast-check": ">= 2.0.0",

@@ -30,7 +30,7 @@ export declare const NonZeroInt: t.IntersectionC<
     t.UnionC<
       [t.BrandC<t.NumberC, NegativeBrand>, t.BrandC<t.NumberC, PositiveBrand>]
     >,
-    t.BrandC<t.NumberC, t.IntBrand>
+    t.BrandC<t.NumberC, t.IntBrand>,
   ]
 >;
 ```
