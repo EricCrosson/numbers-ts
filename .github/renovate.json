@@ -12,6 +12,10 @@
       "groupName": ["ava packages"]
     },
     {
+      "matchPackageNames": "@semantic-release-extras/github-comment-specific",
+      "enabled": false
+    },
+    {
       "matchPackageNames": ["typescript"],
       "enabled": false
     }
