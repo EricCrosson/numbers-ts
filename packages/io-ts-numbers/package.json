@@ -30,7 +30,7 @@
     "posttest": "npm run docs"
   },
   "devDependencies": {
-    "@types/node": "20.11.26",
+    "@types/node": "20.11.27",
     "c8": "9.1.0",
     "docs-ts": "0.8.0",
     "fast-check": "3.16.0",
