@@ -36,7 +36,7 @@
     "docs-ts": "0.8.0",
     "fast-check": "3.17.1",
     "typescript": "5.0.4",
-    "tsx": "4.7.1"
+    "tsx": "4.7.2"
   },
   "peerDependencies": {
     "fast-check": ">= 2.0.0",
