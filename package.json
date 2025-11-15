@@ -25,7 +25,7 @@
     "@semantic-release-extras/github-comment-specific": "1.0.7",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "multi-semantic-release": "3.0.2",
+    "multi-semantic-release": "3.1.0",
     "patch-semantic-release-npm-for-msr": "1.0.0",
     "typescript": "5.0.4"
   }
